@@ -2,15 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Page title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
     <style>
-        h4: focus {
-            font-size :200% ;
-            font-weight :bold ;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <h4>mahesh babu <br> co-founder of mahiwebz</h4>
+
+    <header>Welcome to My Website</header>
+
+    <div class="container">
+        <h1>Hello, World! 🌍</h1>
+        <p>This is my first website hosted on GitHub Pages.</p>
+        <button onclick="alert('Hello! Welcome to my site.')">Click Me</button>
+    </div>
+
 </body>
 </html>
