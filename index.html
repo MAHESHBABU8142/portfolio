@@ -1,53 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Home</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-
-            <!--header section-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+     <body>
     <header>
         <h1>Portfolio</h1>
         <nav>
-          <ul>
-            <a href="www.google.com" class="menu"><li>Home</li></a>
-            <a href="www.google.com" class="menu"><li>About</li></a>
-            <a href="www.google.com" class="menu"> <li>Projects</li></a>
-            <a href="www.google.com" class="menu"><li>Contact</li></a>
-            
-          </ul>
+            <ul>
+                <li class="material-symbols-outlined" id="close-btn">close</li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
+        <button class="material-symbols-outlined" id="dark-mode-btn">dark_mode</button>
+        <button class="material-symbols-outlined" id="menu-btn">menu</button>
     </header>
-
-     <!--middle section-->
-    <section>
-       <div class="content">
-         <h1 class="name">Hi, I'm Maheshbabu</h1>
-         <h2 class="profession">Technopreneur</h2>
-         <p class="discription"> A visionary innovator who blends technology and entrepreneurship to build groundbreaking solutions, <br>disrupt industries, and shape the future.</p>
-         <button>Cantact Me</button>
-       </div>
-        
-    </section>
-
-    <!--footer section-->
-    <footer>
-       <div class="contact_information">
-        <h2>Email:mudavathmaheshbabu002@gmail.com</h2>
-        <h2>Phone:+91 8142260358</h2>
-        <h2>Location: Hyderabad, Telangana, India 501401</h2>
-        <div class="media_links"> 
-           <a href="https://www.linkedin.com/in/maheshbabu-mudavath-6b7589324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="icon"><i class="fa-brands fa-linkedin"></i></a>
-           <a href="https://github.com/MAHESHBABU8142" target="_blank" class="icon" ><i class="fa-brands fa-github"></i></a>
-           <a href="https://linkedin.com/in/maheshbabu" target="_blank" class="icon"><i class="fa-brands fa-facebook"></i></a>
-           <a href="https://www.instagram.com/itsmaheshbabu_001?igsh=NG0wZGEyYzZraDk2" target="_blank" class="icon"><i class="fa-brands fa-instagram"></i></a>
-           <a href="https://youtube.com/@wisdom_wave7?si=vNm6Sm9LxoxR_Lmd" target="_blank" class="icon"><i class="fa-brands fa-youtube"></i></a>
+    <main>
+        <h2>I'm Web developer<br>Mudavath Maheshbabu</h2>
+        <p>I'm a web developer with a passion for creating beautiful and functional websites. I have experience in HTML, CSS, JavaScript, and various frameworks.</p>
+        <div>
+        <button><a href="projects.html">Explore My Projects</a></button>
+        <button id="work-together-btn">Let's Work Together</button>
         </div>
-        <h2>&copy; 2025 Mudavath Maheshbabu. All rights are reserved.</h2>
-    </footer>
-    </body>
+    </main>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <p>A quick look at some of the work I've done recently</p>
+        <div>
+                <h2>To Do app</h2>
+                <p>To do app is a simple web application that allows users to create, manage, and delete tasks. It provides a user-friendly interface for organizing tasks efficiently.
+                    <br>Technologies Used: <b>HTML, CSS, JavaScript</b>
+                </p>
+            
+
+             <label><button>2</button><p>Task Manager</p></label>
+        </div>
+        <script src="portfolio.js"></script>
+     </body>
 </html>

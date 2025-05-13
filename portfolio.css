@@ -1,0 +1,149 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+    transition: all 0.3s ease;
+}
+.material-symbols-outlined{
+   cursor: pointer;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}    
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1.5rem;
+}
+header h1 {
+    font-size: 1.7rem;
+}   
+header nav ul{
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    list-style: none;
+    position: absolute;
+    z-index:1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    font-weight:bold;
+}
+header nav ul #close-btn{
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+}
+header #dark-mode-btn{
+    background-color:black;
+    color:white;
+    transition: all 0.3s ease;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position:fixed;
+    right: 1rem;
+    top:5.5rem;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    background-color:#f0f0f0;
+    padding: 2rem;
+}
+main h2 {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    color: rgb(19, 19, 194);
+}
+main p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+main div {
+    display: flex;
+    gap: 1rem;
+}
+main button {
+    padding: 0.5rem 1rem;
+    background-color: rgb(19, 19, 194);
+    color: #fff;
+    border:1px solid rgb(19, 19, 194);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+main #work-together-btn {
+    background-color: transparent;
+    color:black;
+    border:1px solid rgb(199, 176, 176);
+}
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    gap: 1rem;
+}
+#projects div {
+   
+}
+#projects lebel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+#projects label div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+#projects label button {
+    background-color:green;
+    color:white;
+    font-weight: bold;
+    border:none;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+}
+
+/*----------desktop styling-------------*/
+@media (min-width:1024px){
+    header {
+        padding:1.5rem 7rem;
+    }
+    header #menu-btn ,header #close-btn{
+        display: none;
+    }
+    header nav ul{
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background-color: inherit;
+        color: inherit;
+        height: fit-content;
+        font-weight: normal;
+    }
+
+}
+   
+/*dark mode styling*/
