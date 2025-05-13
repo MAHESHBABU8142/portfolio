@@ -42,6 +42,7 @@ header nav ul{
     height: 100vh;
     font-weight:bold;
 }
+
 header nav ul #close-btn{
     position: absolute;
     top: 2rem;
@@ -93,38 +94,86 @@ main #work-together-btn {
     color:black;
     border:1px solid rgb(199, 176, 176);
 }
-#projects {
+#projects,#about {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    padding: 1.5rem;
+    text-align:center;
     gap: 1rem;
+    padding: 1.5rem 1.2rem;
 }
 #projects div {
-   
-}
-#projects lebel {
+    padding: 1rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem;
+    cursor: pointer;
 }
-#projects label div{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+#projects div article {
+   color:rgb(241, 161, 12);
+}
+#projects div article span{
+    font-size: 3rem;
+}
+#projects div article h2{
+    font-size: 1.7rem;
+    margin: 0.5rem 0;
+}
+#projects div article p,#about article p{
+    font-size: 1rem;
     margin-top: 1rem;
+    color:black;
+    opacity: 0.7;
+    line-height: 1.45;
 }
-#projects label button {
-    background-color:green;
-    color:white;
+#projects div article p span{
+    font-size: 1rem;
+    color: rgb(14, 85, 192);
+    opacity: 1;
     font-weight: bold;
-    border:none;
-    width:40px;
-    height:40px;
-    border-radius:50%;
 }
+#projects button,#about button {
+    padding: 0.5rem 1rem;
+    background-color: rgb(19, 19, 194);
+    color: #fff;
+    border:1px solid rgb(19, 19, 194);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+footer {
+    background:whitesmoke;
+    padding: 1.6rem;
+    color:black;
+    
+}
+footer nav {
+    display: flex;
+    gap: 5rem;
+}
+footer nav div ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.2rem;
+    list-style: none;
+}
+footer nav div ul li{
+    opacity: 0.8;
+}
+footer nav ul h3{
+   padding: 1rem 0;
+}
+footer hr {
+    border: 1px solid black;
+    margin: 1.2rem 0;
+    width: 100%;
+}
+footer p {
+        text-align: center;
+    }
 
 /*----------desktop styling-------------*/
 @media (min-width:1024px){
@@ -143,7 +192,56 @@ main #work-together-btn {
         height: fit-content;
         font-weight: normal;
     }
-
+    header nav ul li:hover{
+        border-bottom: 2px solid rgb(19, 19, 194);
+    }
+    main {
+        padding: 2rem 0;
+        padding-left: 8rem;
+    }
+    main h2 {
+        font-size: 3.5rem;
+    }
+    main p {
+        font-size: 1.2rem;   
+    }
+    main button {
+        padding: 0.7rem 1.3rem;
+        font-size: 1.2rem;
+    }
+    #projects button,#about button {
+         padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+    }
+    main button:hover,#projects button:hover,#about button:hover {
+        background-color: transparent;
+        color: rgb(19, 19, 194);
+        border:1px solid rgb(19, 19, 194);
+        scale: 1.05;
+    }
+    #projects div {
+        flex-direction: row;
+        gap: 10rem;
+        max-width: 800px;
+    }
+    #projects h2,#about h2 {
+        font-size: 2rem;
+    }
+    #about {
+        padding: 2rem 15rem;
+    }
+    footer nav {
+        justify-content: center;
+        gap: 10rem;
+    }
+    footer nav div ul{
+        padding: 1.5rem;
+        flex-direction: row;
+        gap:1rem;
+    }
+    footer nav div ul li:hover{
+        color: rgb(194, 99, 9);
+    }
 }
    
 /*dark mode styling*/
