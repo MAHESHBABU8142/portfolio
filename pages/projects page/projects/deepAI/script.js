@@ -1,6 +1,6 @@
 // Gemini API integration for DeepAI UI
 
-  const API_KEY = ''; // Replace with your Gemini API key
+  const API_KEY = 'AIzaSyAPL1PFVE_eLcc_2ieotUg3ebLvN519bSc'; // Replace with your Gemini API key
 
 const userInput = document.querySelector("footer input");
 const sendBtn = document.querySelector("footer #send-icon");
