@@ -71,10 +71,10 @@ main button {
     background-color:rgb(39, 39, 56);
 }
 #result {
-    margin: 1.5rem 1rem;
+    margin: 3rem 1rem;
 }
 #result div{
-    padding:15% 1rem;
+    padding:5% 0.4rem;
     background-color:rgb(19, 11, 54) ;
     border: 1px solid rgb(68, 30, 134);
     border-radius:0.8rem;
@@ -125,8 +125,38 @@ footer #send-icon {
     background-color:rgb(143, 59, 221);
 }
 
+/* Add these styles at the end of your file for vertical chat layout */
+#result p {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
 
+.user-msg, .bot-msg {
+    display: block;
+    width: fit-content;
+    max-width: 80%;
+    word-break: break-word;
+    margin-bottom: 0.5em;
+}
 
+.user-msg {
+    align-self: flex-end;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.bot-msg {
+    align-self: flex-start;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+article p{
+    text-align: center;
+    width: 100%;
+    line-height:1.5;
+}
 
 
 

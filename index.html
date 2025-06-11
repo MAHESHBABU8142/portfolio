@@ -4,41 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="css/portfolio.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
      <body>
+        <!--------------header--------------------->
     <header>
         <h1>Portfolio</h1>
         <nav>
             <ul>
                 <li class="material-symbols-outlined" id="close-btn">close</li>
                 <li id="home-btn"><a href="index.html">Home</a></li>
-                <li id="about-btn"><a href="about me.html">About Me</a></li>
-                <li id="projects-btn"><a href="projects.html">Projects</a></li>
+                <li id="about-btn"><a href="pages/about me page/about me.html">About Me</a></li>
+                <li id="projects-btn"><a href="pages/projects page/projects.html">Projects</a></li>
                 <li id="contact-btn"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <button class="material-symbols-outlined" id="dark-mode-btn">dark_mode</button>
         <button class="material-symbols-outlined" id="menu-btn">menu</button>
     </header>
+
+    <!------------------------------main-------------------------------->
     <main>
         <h2>I'm Web developer<br>Mudavath Maheshbabu</h2>
         <p>I'm a web developer with a passion for creating beautiful and functional websites. I have experience in HTML, CSS, JavaScript, and various frameworks.</p>
         <div>
-        <button><a href="projects.html">Explore My Projects</a></button>
+        <button><a href="pages/projects page/projects.html">Explore My Projects</a></button>
         <button id="work-together-btn">Let's Work Together</button>
         </div>
     </main>
+  
+    <!-----------------------main--projects--section------------------------>
     <section id="projects">
         <h2>My Projects</h2>
         <p>A quick look at some of the work I've done recently</p>
         
         <div>
-            <article><a href="projects/to do app.html">
-                <span class="material-symbols-outlined">Task_alt</span>
-                <h2>TO DO APP</h2>
-                <p>To do app is a simple web application that allows users to create, manage, and delete tasks. It provides a user-friendly interface for organizing tasks efficiently.
+            <article><a href="pages/projects page/projects/Perplexity/perplexity.html">
+                <h2>Perplexity</h2>
+                <p>A custom search tool that allows users to quickly find information across the website. It features an intuitive interface and real-time suggestions for a seamless search experience.
                     <br>Technologies Used: <span>HTML, CSS, JavaScript.</span>
                 </p></a>
             </article>
@@ -63,7 +67,8 @@
 
 
          <button>See More...</button>
-
+    
+    <!-------------------main--about--section---------------------->
     </section>
     <section id="about">
         <h2>About Me</h2>
@@ -79,6 +84,7 @@
        </article>
        <button>Know More...</button>
     </section>
+    <!----------------------footer----------------------------------->
     <footer>
         <nav>
             <div>
@@ -102,7 +108,10 @@
         </nav> <hr>
          <p>&copy; 2025 Mudavath Maheshbabu. All rights reserved.</p>
     </footer>
-        <script src="portfolio.js"></script>
+     </body>
+     
+     <!---------------------------script---------------------------->
+        <script src="js/portfolio.js"></script>
      </body>
 </html>
 
